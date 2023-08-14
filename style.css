@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  background-color: black;
+  color: #ababab;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+/* nav bar section */
+.navbar {
+  padding: 10px 10px;
+  list-style: none;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+
+}
+
+.navbar ul {
+  background-color: black;
+  width: 50vw;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin-left: 30px;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar ul li {
+  margin: 10px 20px;
+  padding: 2px;
+  text-decoration: none;
+  font-size: 20px;
+
+}
+
+
+.navbar ul li a>*:hover {
+  color: #ff004f;
+
+}
+
+.navbar ul>* {
+  padding: 10px;
+}
+
+/* Intro */
+.container {
+  display: flex;
+  margin: 10%;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.container h1 span {
+  color: #ff004f;
+  display: inline;
+}
+
+.img {
+  width: 400px;
+  height: 400px;
+  border: 5px solid white;
+  border-radius: 50%;
+  margin-right: 2px;
+}
+
+.intro {
+  flex: 1;
+
+}
+.container .intro p{
+  width: 400px;
+  height: 40px;
+}
+
+/* download cv button */
+.btn.btn2 {
+  background-color: #ff004f;
+  border: none;
+  font-size: 15px;
+  color: white;
+  font-weight:bolder;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+/* typewritter effect */
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(40) 1s forwards infinite;
+}
+
+.typewriter span {
+  display: inline-block;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-right-color: transparent;
+  }
+
+  50% {
+    border-right-color: black;
+  }
+}
+
+/* about section */
+#about {
+  padding: 10px;
+  color: #ababab;
+  margin: 10%;
+
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-top: 0px;
+
+}
+
+.about1 {
+  flex-basis: 30%;
+
+}
+
+.about1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.about2 {
+  flex-basis: 50%;
+}
+
+#abc {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 15px;
+  color: #ababab;
+}
+
+/* skill section */
+.tabtitle {
+  margin: 20px 0 40px;
+}
+
+.tablink {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.tablecontent ul li {
+  list-style: none;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #ababab;
+}
+
+.tablecontent ul li span {
+  color: #b54769;
+}
+
+/* education and experience */
+.xyz {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: #ababab;
+  margin:10%;
+}
+
+main.row1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15%;
+
+}
+
+.col header.title {
+
+  color: #ababab;
+  padding: 0px 0px 50px 30px;
+}
+
+.col .content {
+  padding: 0px 30px;
+  border-left: 2px solid #b54769;
+
+}
+
+.col .content .box {
+  position: relative;
+  padding-bottom: 20px;
+  margin-top: -10px;
+
+
+}
+
+.col .content .box h3 {
+  color: #ff004f;
+  padding: -10px;
+}
+
+.col .content .box h4 {
+  padding: 10px;
+  color: #b54769;
+}
+
+.col .content .box h5 {
+  padding: 10px;
+}
+
+.col .content .box p {
+  padding: 10px;
+}
+
+.col .content .box::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  right: calc(100% + 22px);
+  top: 0;
+  background-color: #ff004f;
+}
+
+/* contact section */
+#contact {
+  font-size: 20px;
+  color: #ababab;
+  margin: 10%;
+  padding: 10px;
+}
+
+.contactleft {
+  flex-basis: 35%;
+  margin-right: 15 px;
+  font-size: 15px;
+}
+
+.subtitle {
+  padding: 0px 0px 10px 0px;
+}
+
+.contactleft p i {
+  color: #ff004f;
+  margin-right: 15 px;
+  font-size: 15px;
+}
+
+.contactright {
+  flex-basis: 60%;
+}
+
+/* icons */
+.socialicons a {
+  color: #ababab;
+  text-decoration: none;
+  font-size: 30px;
+  display: inline-block;
+  margin-right: 15px;
+  transition: transform 0.5s;
+
+}
+
+.socialicons i:hover {
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+
+.contactright form {
+  width: 100%;
+}
+
+/* contact form */
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+/* submit button */
+form .btn2 {
+  padding: 15px 30px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* footer */
+.copyright p {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0px;
+  background-color: #262626;
+}
+
+/* css for small screen */
+.menu-icon{
+  display: none;
+}
+@media screen and (max-width:635px){  
+  .menu-icon{
+    display: block;
+    font-size: 25px;
+   }
+   .header .menu-icon {
+  padding: 10px;
+  margin-top: 10px ;
+  right: 0px;  
+  
+   }
+  .navbar{
+    display: none;
+  }
+  .intro{
+    display: block;
+
+  }
+  .container{
+    font-size: 10px;
+    display: block;
+    margin-top: 40px;
+    padding-left: 20px;
+    }
+    .btn.btn2{
+      font-size: 10px;
+    }
+  .img {
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  margin-top: 20%;
+}
+#about{
+  padding-left: 10px;
+}
+.row{
+  display: block;
+}
+.about2 h1{
+  margin-top:20px;
+}
+#abc{
+  display: block;
+  font-size: 14px;
+  text-align: justify;
+}
+.xyz{
+  display: block;
+  font-size: 15px;
+  margin-top:0px ;
+  }
+  main.row1 {
+    display: block;}
+  #Experience.col{
+    margin-top: 30%;
+  }
+#contach .container{
+  font-size: 10px;
+margin-top: 30%;
+
+}
+.socialicons a {
+  font-size: 20px;
+}
+form input,
+form textarea {
+  font-size: 15px;
+}
+
+
+
+#portfolio-container{
+  height: 100%;
+  background-color: #ff004f;
+}
+}
